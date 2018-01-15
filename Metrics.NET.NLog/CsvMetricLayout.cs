@@ -1,12 +1,10 @@
-﻿
+﻿using CsvLayout = global::NLog.Layouts.CsvLayout;
+
 namespace Metrics.NLog
 {
-    using CsvLayout = global::NLog.Layouts.CsvLayout;
-    using NLog = global::NLog;
-
-    [NLog.Config.AppDomainFixedOutput]
-    [NLog.Layouts.Layout("CsvGaugeLayout")]
-    [NLog.Config.ThreadAgnostic]
+    [global::NLog.Config.AppDomainFixedOutput]
+    [global::NLog.Layouts.Layout("CsvGaugeLayout")]
+    [global::NLog.Config.ThreadAgnostic]
     public class CsvGaugeLayout : CsvLayout
     {
         public CsvGaugeLayout()
@@ -16,9 +14,9 @@ namespace Metrics.NLog
         }
     }
 
-    [NLog.Config.AppDomainFixedOutput]
-    [NLog.Layouts.Layout("CsvCounterLayout")]
-    [NLog.Config.ThreadAgnostic]
+    [global::NLog.Config.AppDomainFixedOutput]
+    [global::NLog.Layouts.Layout("CsvCounterLayout")]
+    [global::NLog.Config.ThreadAgnostic]
     public class CsvCounterLayout : CsvLayout
     {
         public CsvCounterLayout()
@@ -28,9 +26,9 @@ namespace Metrics.NLog
         }
     }
 
-    [NLog.Config.AppDomainFixedOutput]
-    [NLog.Layouts.Layout("CsvMeterLayout")]
-    [NLog.Config.ThreadAgnostic]
+    [global::NLog.Config.AppDomainFixedOutput]
+    [global::NLog.Layouts.Layout("CsvMeterLayout")]
+    [global::NLog.Config.ThreadAgnostic]
     public class CsvMeterLayout : CsvLayout
     {
         public CsvMeterLayout()
@@ -40,9 +38,9 @@ namespace Metrics.NLog
         }
     }
 
-    [NLog.Config.AppDomainFixedOutput]
-    [NLog.Layouts.Layout("CsvHistogramLayout")]
-    [NLog.Config.ThreadAgnostic]
+    [global::NLog.Config.AppDomainFixedOutput]
+    [global::NLog.Layouts.Layout("CsvHistogramLayout")]
+    [global::NLog.Config.ThreadAgnostic]
     public class CsvHistogramLayout : CsvLayout
     {
         public CsvHistogramLayout()
@@ -52,9 +50,9 @@ namespace Metrics.NLog
         }
     }
 
-    [NLog.Config.AppDomainFixedOutput]
-    [NLog.Layouts.Layout("CsvTimerLayout")]
-    [NLog.Config.ThreadAgnostic]
+    [global::NLog.Config.AppDomainFixedOutput]
+    [global::NLog.Layouts.Layout("CsvTimerLayout")]
+    [global::NLog.Config.ThreadAgnostic]
     public class CsvTimerLayout : CsvLayout
     {
         public CsvTimerLayout()
