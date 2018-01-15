@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFrameworks>net45</TargetFrameworks>
+    <RootNamespace>Metrics.NLog</RootNamespace>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Metrics.NET" Version="0.3.7" />
+    <PackageReference Include="NLog" Version="3.2.1" />
+  </ItemGroup>
+
+</Project>
